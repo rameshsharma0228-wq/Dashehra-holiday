@@ -1,0 +1,24 @@
+#Build pipeline directory tree
+
+#Creating the required structure 
+mkdir pipeline
+cd pipeline
+mkdir stages env artifacts
+mkdir stages/build stages/test env/staging env/prod artifacts/old
+mkdir stages/test/unit
+mkdir stages/test/unit/integration
+
+#Giving the required permissions to the folders
+chmod 750 stages
+chmod 770 artifacts
+chmod 700 env
+
+#Creating files and adding content inside it
+cd stages/build
+touch app.py config.json NOTES.md
+echo "Build stage initialized." > NOTES.md
+
+#Creating file ,adding content inside it and giving permissions
+cd ../../artifacts/old
+touch build.log test.log deploy.log
+chmod 640 build.log test.log deploy.log

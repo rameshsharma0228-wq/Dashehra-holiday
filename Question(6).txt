@@ -1,0 +1,11 @@
+#Simplify the compilation process
+
+#Giving permissions to file 
+chmod 777 hello.c
+
+#Creating compiled files 
+gcc hello.c -o hello
+gcc hello.c -o build.sh
+
+#Executig the file
+./hello

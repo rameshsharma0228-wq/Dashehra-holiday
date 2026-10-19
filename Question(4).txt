@@ -1,0 +1,17 @@
+#Deployment project permissions
+
+#Entering the folder
+cd deployment
+
+#Giving permissions to files
+chmod 700 app/server.py app/handler.py app/settings.py
+
+#Giving permissions to folder and it's files
+chmod 770 datasets
+chmod 770 datasets/train.csv datasets/test.csv
+
+#Giving permissions to files
+chmod 644 docs/OVERVIEW.md
+
+#Giving permissions to files
+chmod 755 bin/start.sh bin/stop.sh bin/healthcheck.sh

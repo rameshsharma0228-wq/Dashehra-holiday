@@ -1,0 +1,21 @@
+#API-Service directory workflow
+
+#Entering the folder
+cd api-service
+
+#Intializing git
+git init
+
+#Staging and commiting the file
+git add README.md
+git commit -m "Add documentation"
+
+#Staging and commiting multiple files
+git add server.js routes.js package.json
+git commit -m "Add server files"
+
+#Using git status to check untracked files
+git status
+
+#Using git log to check commits that have been made
+git log

@@ -1,0 +1,27 @@
+#Create a project folder structure
+
+#Giving permissions to execute the file
+chmod 777 create-service
+
+#Reading the content script of the file
+cat create-service
+
+#Using shebang operator
+#!/bin/bash
+
+#Creating folders and files required for the script
+mkdir -p service/controllers
+mkdir -p service/models
+mkdir -p service/routes
+mkdir -p service/middleware
+printf '%s\n' 'console.log("Server started");' > service/server.js
+printf '%s\n' 'API Service' > service/README.md
+
+#Replacing the content of the file as script
+echo 'echo "#!/bin/bash" > service' > create-service
+echo "mkdir -p service/controllers" >> create-service
+echo "mkdir -p service/models" >> create-service
+echo "mkdir -p service/routes" >> create-service
+echo "printf '%s\n' 'console.log('Server started');' > service/server.js" >> create-service
+echo "printf '%s\n' 'API Service' > service/README.md" >> create-service
+echo "mkdir -p service/middleware" >> create-service

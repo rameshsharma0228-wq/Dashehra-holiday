@@ -1,0 +1,8 @@
+#The missing project credentials
+
+#Using grep to find the exact word containing password 
+grep -r "DB_PASSWORD" .
+pwd
+
+#Copying the password in the required file
+cat EventApp/config/.env > EventApp/db_password.txt

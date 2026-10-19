@@ -1,0 +1,20 @@
+#The internship project setup
+
+#Going inside the folder and intializing git
+cd client-app
+git init
+
+#Adding content in the files
+echo "Hello" > index.html
+echo "Hello " > app.js
+
+#Staging the files and commiting them 
+git add index.html app.js
+git commit -m "Initial client files"
+
+#Registering remote as origin and pushing the data in main for the first time
+git remote add origin https://github.com/startup/client-app.git
+git push -u origin main 
+
+#Using log to check the commits 
+git log

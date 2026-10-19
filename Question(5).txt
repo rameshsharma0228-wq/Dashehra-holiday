@@ -1,0 +1,11 @@
+#Execute a python script directly
+
+#Using Shebang operator
+echo "#!/usr/bin/env python3" > hello.py
+
+#Writing the python code in file
+echo "print('Hello from Python')" >> hello.py
+
+#Giving the file permissions to execute and executing it
+chmod 777 hello.py
+./hello.py

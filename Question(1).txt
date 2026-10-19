@@ -1,0 +1,30 @@
+#Advanced file management
+
+#First to create folder named -project-files
+mkdir project-files
+
+#To enter the folder use cd 
+cd project-files
+
+#Creating multiple files using touch 
+touch report.docx summary.docx draft.docx
+
+#Creating copy of a file and changing it's name
+cp report.docx ./report_backup.docx
+
+#Creating another folder
+mkdir old
+
+#Moving one file into another folder of same directory 
+mv ./draft.docx ./old/
+
+#Changing files name 
+mv ./summary.docx ./final_summary.docx
+
+#Creating copy of file in another folder
+cp ./final_summary.docx ./old/
+
+#Removing file 
+rm ./report_backup.docx
+
+
